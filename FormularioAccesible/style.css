@@ -1,0 +1,84 @@
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  max-width: 500px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+.formulario-contenedor {
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  margin-top: 0;
+  color: #222;
+}
+
+.grupo-form {
+  margin-bottom: 20px;
+}
+
+/* Las etiquetas deben ser visibles y claras */
+label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+
+/* Estilos base para los inputs */
+input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-size: 16px;
+  transition: all 0.2s;
+}
+
+/* * CRÍTICO PARA LA ACCESIBILIDAD 
+         * Un estilo de :focus muy visible para que el usuario 
+         * sepa exactamente en qué campo se encuentra al usar la tecla Tab.
+         */
+input:focus,
+button:focus {
+  outline: 3px solid #0056b3;
+  outline-offset: 2px;
+  border-color: #0056b3;
+  background-color: #f0f7ff;
+}
+
+button {
+  width: 100%;
+  padding: 12px;
+  background-color: #0056b3;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+button:hover {
+  background-color: #004494;
+}
+
+/* Mensaje de éxito oculto por defecto */
+#mensaje-exito {
+  display: none;
+  margin-top: 20px;
+  padding: 15px;
+  background-color: #d4edda;
+  color: #155724;
+  border: 1px solid #c3e6cb;
+  border-radius: 4px;
+  text-align: center;
+  font-weight: bold;
+}
